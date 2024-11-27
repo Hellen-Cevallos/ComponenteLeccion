@@ -1,0 +1,42 @@
+
+<ion-header>   
+  <ion-toolbar>     
+    <ion-title color="primary">LECCIÓN COMPONENTES</ion-title>   
+  </ion-toolbar> 
+</ion-header>    
+<ion-content>     
+      <ion-list>     
+        <ion-item *ngFor="let c of componentes" [routerLink]="c.redirectTo" detail>       
+          <ion-icon [name]="c.icon" slot="start" color="primary">
+          </ion-icon>              
+          {{c.name}}      
+        </ion-item>     
+      </ion-list> 
+    </ion-content>
+
+<!--  
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Lección Componentes</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-button routerLink="/avatar">
+    Avatar
+  </ion-button>
+  <ion-button routerLink="/button">
+    Button
+  </ion-button>
+
+</ion-content> -->
+
+
+<!--   
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+</ion-content>
+-->
